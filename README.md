@@ -27,7 +27,7 @@ This system aims to provide a professional digital environment that enhances the
 
 ### Login page
 
-![Login](screenshots/Login-page.png)
+![Login](Screenshots/Login-page.png)
 
 ### Dashbord page
 
