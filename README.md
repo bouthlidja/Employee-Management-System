@@ -31,12 +31,24 @@ This system aims to provide a professional digital environment that enhances the
 
 ### Dashbord page
 
+![Dashbord](Screenshots/Dashbord-page.png)
+
 ### Employees page
+
+![Employees](Screenshots/Employees-page.png)
 
 ### Requests page
 
+![Requests](Screenshots/Requests-page.png)
+
 ### Add request
+
+![Add request](Screenshots/Add-request.png)
 
 ### Contact employees
 
+![Contact-employees](Screenshots/Contact-employees.png)
+
 ### Folders_page
+
+![Contact-employees](Screenshots/Folders-page.png)
