@@ -1,0 +1,9 @@
+@import "base.css";
+
+#dashboard .row {
+  margin-top: 10px;
+  background-color: red;
+}
+#dashboard .row .card {
+  background-color: green;
+}

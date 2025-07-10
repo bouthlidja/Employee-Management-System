@@ -1,0 +1,35 @@
+.model-add-resignation .form-resignation {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  overflow-y: auto;
+  display: none;
+}
+.form-resignation input {
+  padding: 10px;
+}
+.form-resignation .custom-select select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.form-resignation .custom-select::after {
+  content: "\f078"; /* Unicode للأيقونة (fa-chevron-down) */
+  font-family: "Font Awesome 5 Free"; /* اسم الخط */
+  font-weight: 900; /* استخدام الإصدار العريض */
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(0%);
+  pointer-events: none; /* منع التفاعل مع السهم */
+  color: #007bff;
+}

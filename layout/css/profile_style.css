@@ -1,0 +1,83 @@
+/* #profile .alert {
+  display: none;
+}
+
+#profile .form-container {
+  background-color: red;
+  padding: 10px 0;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#profile .form-group {
+
+  width: 300px;
+}
+#profile label {
+  padding: 10px;
+  font-weight: 300;
+} */
+/*  */
+#profile .alert {
+  display: none;
+}
+#profile .form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#profile .form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+#profile .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+#profile label {
+  font-weight: 100;
+  margin: 15px 0;
+  font-size: 20px;
+}
+/*  */
+#profile .showPassword {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: -10px;
+}
+#profile input[type="checkbox"],
+#profile .showPassword {
+  margin: 0;
+}
+#profile .btn-save {
+  width: 200px; /* تحديد عرض الزر */
+  display: block; /* جعله عنصر بلوك ليتمحور تلقائيًا */
+  margin: 20px auto; /* جعله في المنتصف رأسيًا وأفقيًا */
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  float: right;
+}
+
+#profile .btn-save:hover {
+  background-color: #0056b3;
+}

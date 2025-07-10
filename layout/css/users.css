@@ -1,0 +1,45 @@
+/* .main-container{
+  background: red;
+} */
+
+.main-container h2 {
+  margin: 0;
+}
+.main-container .main .box1 .form-searsh {
+  display: flex;
+}
+.add-users {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  transition: all 0.5s;
+}
+
+.add-users .panel-heading .btn-add-close,
+.update-users .panel-heading .btn-update-close {
+  background-color: transparent;
+}
+.update-users {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  transition: all 0.5s;
+}
+/* .update-users .panel-heading {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: none;
+} */
+.modal {
+  background-color: #1d26346b;
+}
+.delete-user-box .userID {
+  font-weight: bold;
+}

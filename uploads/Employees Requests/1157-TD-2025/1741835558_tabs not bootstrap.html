@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal with Tabs</title>
+  <style>
+    /* إعدادات عامة للمودال */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: #fff;
+      border-radius: 5px;
+      width: 60%;
+      max-width: 500px;
+      padding: 20px;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-header h2 {
+      margin: 0;
+    }
+
+    .close-btn {
+      cursor: pointer;
+      font-size: 20px;
+      background: none;
+      border: none;
+    }
+
+    /* علامات التبويب */
+    .tabs {
+      display: flex;
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      border: 1px solid #ddd;
+      border-bottom: none;
+      background: #f9f9f9;
+    }
+
+    .tab.active {
+      background: #fff;
+      border-bottom: 2px solid #fff;
+      font-weight: bold;
+    }
+
+    /* محتوى التبويبات */
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- زر فتح المودال -->
+  <button id="openModal">فتح المودال</button>
+
+  <!-- المودال -->
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>مودال يحتوي على Tabs</h2>
+        <button class="close-btn" id="closeModal">&times;</button>
+      </div>
+      <div class="tabs">
+        <div class="tab active" data-tab="tab1">Tab 1</div>
+        <div class="tab" data-tab="tab2">Tab 2</div>
+        <div class="tab" data-tab="tab3">Tab 3</div>
+        <div class="tab" data-tab="tab4">Tab 4</div>
+      </div>
+      <div id="tab1" class="tab-content active">
+        <p>محتوى التبويب الأول</p>
+      </div>
+      <div id="tab2" class="tab-content">
+        <p>محتوى التبويب الثاني</p>
+      </div>
+      <div id="tab3" class="tab-content">
+        <p>محتوى التبويب الثالث</p>
+      </div>
+      <div id="tab4" class="tab-content">
+        <p>محتوى التبويب الرابع</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // عناصر المودال
+    const modal = document.getElementById('myModal');
+    const openModalBtn = document.getElementById('openModal');
+    const closeModalBtn = document.getElementById('closeModal');
+
+    // فتح المودال
+    openModalBtn.addEventListener('click', () => {
+      modal.style.display = 'flex';
+    });
+
+    // إغلاق المودال
+    closeModalBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    // علامات التبويب
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // إزالة الفئة "active" من جميع التبويبات والمحتوى
+        tabs.forEach(t => t.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+
+        // إضافة الفئة "active" للتبويب والمحتوى المحدد
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

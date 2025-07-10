@@ -1,0 +1,92 @@
+.transfers {
+  margin: 10px 0;
+}
+
+.form-Add-transfer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: none;
+  width: 100%;
+  max-width: 800px; /* يمكن تعديل العرض حسب الحاجة */
+  height: 300px; /* ارتفاع ثابت */
+  overflow-y: auto; /* إضافة شريط تمرير رأسي عند الحاجة */
+}
+.model-update-transfer .form-transfer {
+  height: 300px; /* ارتفاع ثابت */
+  overflow-y: auto;
+}
+.form-transfer .form-group {
+  margin-bottom: 15px;
+}
+
+.form-transfer label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-transfer .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-transfer .form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* تنسيق Flexbox لجعل العناصر جنبًا إلى جنب */
+.form-transfer .form-group-container {
+  display: flex;
+  flex-wrap: wrap; /* يسمح للعناصر بالانتقال إلى السطر التالي عند نفاد المساحة */
+  gap: 15px; /* المسافة بين العناصر */
+}
+
+.form-transfer .form-group-container .form-group {
+  flex: 1 1 calc(33.33% - 15px); /* يجعل كل عنصر يأخذ ثلث المساحة مع مراعاة الفجوة */
+  min-width: 200px; /* الحد الأدنى لعرض العنصر */
+}
+
+/* تنسيق خاص لحقل التاريخ */
+.form-transfer .form-group.resetInput {
+  flex: 1 1 calc(50% - 15px); /* يجعل حقل التاريخ يأخذ نصف المساحة */
+}
+/* .model-add-transfer .modal-body .form-transfer {
+  background-color: red;
+  display: none;
+} */
+/* .reporet-data{
+  background-color: red;
+} */
+.content-report {
+  width: 100%;
+}
+.content-report .headerReport {
+  font-size: 20px;
+  padding: 10px 0;
+}
+.report-data {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.report-data label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.report-data .form-group {
+  margin-bottom: 15px;
+  max-width: 250px;
+}
+.report-data button {
+  margin-bottom: -10px;
+  padding: 13px;
+}

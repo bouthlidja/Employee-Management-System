@@ -1,0 +1,169 @@
+.info-emp {
+  padding: 10px;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--grey2);
+}
+.inpSrsh {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.inpSrsh input {
+  padding: 10px;
+}
+.resetInput {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  /* color: var(--green); */
+  min-width: 270px;
+  padding: 10px;
+}
+/* .form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 280px;
+} */
+.form-Add-leave {
+  display: none;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  gap: 20px;
+  padding: 20px 0px;
+  /* align-items: center; */
+  flex-direction: column;
+  overflow-y: auto;
+  height: 300px;
+}
+/* .form-leave .form-group {
+  flex-grow: 1;
+} */
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.form-leave input {
+  height: 48px;
+}
+/* تنسيق عنصر select */
+.custom-select select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  appearance: none; /* إزالة المظهر الافتراضي */
+  -webkit-appearance: none; /* متوافق مع WebKit */
+  -moz-appearance: none; /* متوافق مع Firefox */
+}
+
+/* السهم باستخدام Font Awesome */
+.custom-select::after {
+  content: "\f078"; /* Unicode للأيقونة (fa-chevron-down) */
+  font-family: "Font Awesome 5 Free"; /* اسم الخط */
+  font-weight: 900; /* استخدام الإصدار العريض */
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none; /* منع التفاعل مع السهم */
+  color: #007bff;
+}
+.model-add-Leave .msg_err {
+  margin: 0;
+  font-size: 14px;
+  color: var(--red);
+  font-weight: 100;
+  text-align: center;
+}
+.leaves {
+  margin: 10px 0;
+  background-color: red;
+}
+.leaves .tabs {
+  margin: 0;
+}
+.leaves .tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background: #f1f1f1;
+}
+.leaves .tab.active {
+  background: #fff;
+  font-weight: bold;
+}
+
+.leaves .tab-content {
+  display: none;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.leaves .tab-content.active {
+  display: block;
+}
+
+.leaves .box {
+  display: flex;
+
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* تنسيق النموذج */
+.leaves .form-searsh {
+  display: flex;
+
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+/* تنسيق الحقل النصي */
+.leaves .form-control.searsh {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 40px;
+}
+
+/* تنسيق الزر */
+.leaves .btn.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  /* margin-left: 10px; */
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+/* إضافة تأثير على الزر عند المرور عليه */
+.leaves .btn.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* تنسيق للحقل النصي عند الحصول على التركيز */
+.leaves .form-control.searsh:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* إضافة بعض المسافات */
+
+.leaves label {
+  margin: 10px 0;
+}
+.leaves .year {
+  margin: 0 0 10px 0;
+}

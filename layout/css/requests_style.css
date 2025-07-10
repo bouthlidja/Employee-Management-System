@@ -1,0 +1,29 @@
+#sendRequest,
+#updateRequest {
+  padding: 20px;
+
+  overflow-y: auto;
+  height: 400px;
+}
+
+#sendRequest .form-group,
+#updateRequest .form-group {
+  margin-bottom: 15px;
+}
+#sendRequest label,
+#updateRequest label {
+  display: block;
+  font-weight: bold;
+}
+#sendRequest input,
+select,
+textarea,
+#updateRequest input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

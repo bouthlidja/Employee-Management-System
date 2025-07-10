@@ -1,0 +1,43 @@
+#login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   }
+   #login .header{
+   
+     text-align: center;
+     margin: 100px auto 50px;
+   }
+   .contentForm{
+     border: 1px solid var(--borderColor);
+     border-radius: var(--borderRadius);
+     width: fit-content;
+     padding: 20px;
+   
+     width: 400px;
+     margin:  auto;
+   }
+   .contentForm span {
+   
+     color: red;
+     display: block;
+     text-align: center;
+    
+   }
+   .Form input {
+     border-radius: var(--borderRadius);
+     margin-bottom: 10px;
+     height: 40px;
+   }
+   .showPassword{
+     /* background-color: red; */
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+   }
+   .showPassword input {
+     margin-right: 20px;
+   }
+   .showPassword label {
+     font-weight: 100;
+   }

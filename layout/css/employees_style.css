@@ -1,0 +1,67 @@
+.tabs {
+  display: flex;
+  /* border-bottom: 2px solid red; */
+  margin-bottom: 20px;
+  /* background-color: rebeccapurple; */
+  background-color: var(--grey1);
+}
+
+.tab {
+  font-weight: bold;
+  flex: 1;
+  /* text-align: center; */
+  padding: 10px;
+  cursor: pointer;
+  /* border: 1px solid #ddd; */
+  border-bottom: none;
+  /* background: #f9f9f9; */
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.tab.active {
+  border-top: 1px solid var(--grey2);
+  border-left: 1px solid var(--grey2);
+  font-weight: bold;
+  border-right: 1px solid var(--grey2);
+  background-color: var(--white);
+}
+
+/* محتوى التبويبات */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  /* display: block; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.model-add-employees .form-group,
+.model-update-employees .form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 280px;
+}
+
+/* #tab1,
+#tab2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+/* #tab1 .form-group,
+#tab2 .form-group {
+  flex-basis: 280px;
+} */
+#err_msg {
+  color: var(--red);
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}

@@ -1,0 +1,78 @@
+@import "base.css";
+
+/* start side bar */
+#sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  /* background-color: #263043; */
+  /* background-color: var(--grey1); */
+  background-color: var(--white);
+  overflow: hidden;
+  transition: all 0.5s;
+  box-shadow: 2px -1px 7px -3px rgba(0, 0, 0, 0.35);
+}
+
+.sidebar-title {
+  margin: 15px 0px;
+  font-size: 33px;
+}
+
+.sidebar-brand {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.sidebar-list-item {
+  padding: 10px 20px;
+  font-size: 15px;
+  /* font-weight: 900; */
+}
+
+.sidebar-list-item:hover {
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  background-color: var(--blue2);
+  cursor: pointer;
+}
+
+.sidebar-list-item .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+.sidebar-list-item > a {
+  text-decoration: none;
+  /* color: #9e9ea4; */
+  color: var(--blue2);
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.sidebar-list-item:hover .title {
+  color: var(--white);
+}
+.sidebar-list-item:hover svg {
+  fill: var(--white);
+}
+/* 
+
+.dropdown-menu {
+  display: none;
+  padding-left: 30px;
+  background-color: var(--white);
+  list-style: none;
+}
+
+.dropdown-menu li {
+  padding: 8px 0;
+}
+
+.sidebar-list-item:hover .dropdown-menu {
+  display: block;
+}
+
+.sidebar-list-item .dropdown-menu li a {
+  text-decoration: none;
+  color: var(--blue2);
+} */

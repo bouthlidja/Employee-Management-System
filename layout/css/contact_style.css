@@ -1,0 +1,77 @@
+.SendEmail {
+  max-width: 700px;
+  margin: 0px auto;
+  background: white;
+  padding: 20px;
+}
+.SendEmail .headerEmail {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.SendEmail .form-group {
+  margin-bottom: 10px;
+}
+.SendEmail .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.SendEmail .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.SendEmail .form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.SendEmail .dept {
+  appearance: none;
+  background: white;
+  cursor: pointer;
+}
+.SendEmail .submit-btn {
+  width: 200px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  float: right;
+}
+.SendEmail .submit-btn:hover {
+  background-color: #0056b3;
+}
+.SendEmail .alert {
+  display: none;
+}
+.SendEmail #progressBar {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #f3f3f3; /* لون الخلفية */
+  border: none;
+  display: none; /* إخفاء الشريط افتراضيًا */
+  margin-bottom: 10px;
+}
+
+.SendEmail #progressBar::-webkit-progress-bar {
+  background-color: #f3f3f3; /* لون الخلفية للشريط */
+  border-radius: 5px;
+}
+
+.SendEmail #progressBar::-webkit-progress-value {
+  background-color: #4caf50; /* لون الشريط أثناء التقدم */
+  border-radius: 5px;
+  transition: width 0.4s ease-in-out; /* تأثير حركة ناعمة */
+}
+
+.SendEmail #progressBar::-moz-progress-bar {
+  background-color: #4caf50; /* لون الشريط في فايرفوكس */
+  border-radius: 5px;
+}
