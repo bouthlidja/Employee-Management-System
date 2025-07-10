@@ -51,4 +51,4 @@ This system aims to provide a professional digital environment that enhances the
 
 ### Folders_page
 
-![Contact-employees](Screenshots/Folders-page.png)
+![Folders-page](Screenshots/Folders-page.png)
